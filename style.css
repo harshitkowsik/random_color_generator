@@ -1,0 +1,123 @@
+*{
+    font-family: poppins;
+}
+body{
+    background: #212121;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.nav-top{
+    background: transparent;
+    height: 2em;
+    position: absolute;
+    width: 100vw;
+    box-shadow: 0px 1px 0px grey ;
+}
+
+.nav-left{
+    background: transparent;
+    position: absolute;
+    height: 100vh;
+    width: 2em;
+    box-shadow: 1px 0px 0px grey ;
+}
+
+.nav-right{
+    background: transparent;
+    position: absolute;
+    width: 2em;
+    height: 100vh;
+    right: 0px;
+    box-shadow: -1px 0px 0px grey ;
+    
+}
+
+.nav-bottom{
+    background: transparent;
+    height: 2em;
+    position: absolute;
+    width: 100vw;
+    box-shadow: 0px -1px 0px grey ;
+    bottom: 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+    flex-direction:column;
+    background-color: white;
+    margin: 33px;
+    transition: all ease 0.5s;
+}
+
+.title{
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5vw;
+    z-index: 1; 
+    font-weight: 900;
+    animation: switch 10s linear infinite;
+}
+
+#button{
+    position: absolute;
+    font-size: 1em;
+    padding: 0.4em 3em;
+    border: 1px solid grey;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    background:linear-gradient( 45deg, white , rgb(0, 0, 255));
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width:100px ;
+}
+
+#button:hover{
+    filter: brightness(110%);
+}
+
+#button:active{
+    filter: brightness(95%);
+}
+
+.bottom-text{
+    position: absolute;
+    bottom: 8px;
+    right: 4.5em;
+    color: white;
+    opacity: 0.5;
+    font-size: 10px;
+    font-weight: 100;
+}
+@keyframes switch {
+    from {background: red;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    20% {background: green;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    40% {background: blue;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    60% {background: yellow;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    80% {background: violet;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    to {background: rgb(255 0 0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+}
+
